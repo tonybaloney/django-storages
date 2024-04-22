@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Hello World</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        {% for person in people %}
+            <p>{{ person.name }}</p>
+            <img src="{{ person.picture.url }}" />
+        {% endfor %}
+    </body>
+</html>
